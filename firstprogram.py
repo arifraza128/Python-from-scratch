@@ -65,3 +65,7 @@ print(x,x.imag,x.real)
 string = "this is python"
 print(string)
 
+fnum=input("first num:")
+fsum=input("second num:")
+sum=fsum+fnum
+print(sum)
