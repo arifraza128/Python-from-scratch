@@ -39,3 +39,12 @@ print(a)
 #in/not in
 print('D' in 'delhi')
 print(1 in [1,2,3,4])
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Modulus:", a % b)
