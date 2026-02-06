@@ -40,3 +40,21 @@ while x < 3:
 else:
   print('limit crossed')
         
+#guess number 
+import random
+
+jackpot = random.randint(1, 100)
+counter = 0
+
+while True:
+    guess = int(input("Guess a number between 1 and 100: "))
+    counter += 1
+
+    if guess < jackpot:
+        print("Too low!")
+    elif guess > jackpot:
+        print("Too high!")
+    else:
+        print("Correct ")
+        print("You took", counter, "attempts")
+        break
