@@ -85,4 +85,23 @@ while True:
         print("Login Successful")
         break
     else:
-        print("Wrong password, try again")
+       
+
+#Find largest number from list
+numbers = [10, 45, 23, 89, 12]
+largest = numbers[0]
+
+for num in numbers:
+    if num > largest:
+        largest = num
+
+print("Largest number is:", largest)
+
+# Voting eligibility check
+ages = [16, 18, 20, 15]
+
+for age in ages:
+    if age >= 18:
+        print(age, "- Eligible to vote")
+    else:
+        print(age, "- Not eligible to vote")
