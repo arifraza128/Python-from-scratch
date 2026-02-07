@@ -75,3 +75,14 @@ for num in numbers:
         print(num, "is Positive")
     else:
         print(num, "is Negative or Zero")
+
+# Password check (using while loop)
+password = "admin"
+
+while True:
+    user = input("Enter password: ")
+    if user == password:
+        print("Login Successful")
+        break
+    else:
+        print("Wrong password, try again")
