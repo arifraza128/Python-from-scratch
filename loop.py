@@ -58,3 +58,20 @@ while True:
         print("Correct ")
         print("You took", counter, "attempts")
         break
+
+
+# Check even or odd 
+for i in range(1, 6):
+    if i % 2 == 0:
+        print(i, "is Even")
+    else:
+        print(i, "is Odd")
+
+# Print numbers and check positive / negative
+numbers = [-2, -1, 0, 1, 2]
+
+for num in numbers:
+    if num > 0:
+        print(num, "is Positive")
+    else:
+        print(num, "is Negative or Zero")
