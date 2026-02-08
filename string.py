@@ -21,5 +21,14 @@ print(len(text))
 
 
 word = "Python"
-print(word[0])   # P
-print(word[-1])  # n
+print(word[0])   
+print(word[-1])  
+
+text = "Python programming"
+print("Python" in text)   
+print("Java" in text)     
+
+name = "Arif"
+for ch in name:
+    print(ch)
+
