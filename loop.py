@@ -105,3 +105,16 @@ for age in ages:
         print(age, "- Eligible to vote")
     else:
         print(age, "- Not eligible to vote")
+
+
+
+text = "DevOps Engineer"
+
+freq = {}
+
+for index, char in enumerate(text):
+    if char.isalpha():          # ignore spaces and symbols
+        char = char.lower()     # case-insensitive
+        freq[char] = freq.get(char, 0) + 1
+
+print(freq)
