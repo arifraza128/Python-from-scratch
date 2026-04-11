@@ -19,3 +19,13 @@ while True:
     
     if num == 0:
         break
+
+#equivalent
+
+while True:
+    print("This runs at least once")
+    
+    condition = input("Enter 'q' to quit: ")
+    
+    if condition == 'q':
+        break
