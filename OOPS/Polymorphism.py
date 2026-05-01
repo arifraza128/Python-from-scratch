@@ -1,38 +1,17 @@
-#include <iostream>
-using namespace std;
+class Animal:
+    def sound(self):
+        print("Animal makes a sound")
 
-class Animal {
-public:
-    virtual void sound() {
-        cout << "Animal makes a sound" << endl;
-    }
-};
+class Dog(Animal):
+    def sound(self):
+        print("Dog barks")
 
-class Dog : public Animal {
-public:
-    void sound() {
-        cout << "Dog barks" << endl;
-    }
-};
+class Cat(Animal):
+    def sound(self):
+        print("Cat meows")
 
-class Cat : public Animal {
-public:
-    void sound() {
-        cout << "Cat meows" << endl;
-    }
-};
+# Using polymorphism
+animals = [Dog(), Cat()]
 
-int main() {
-    Animal* a;   
-
-    Dog d;
-    Cat c;
-
-    a = &d;
-    a->sound();  
-
-    a = &c;
-    a->sound();  
-
-    return 0;
-}
+for a in animals:
+    a.sound()
