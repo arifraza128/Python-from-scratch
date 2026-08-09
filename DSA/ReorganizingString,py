@@ -1,1 +1,23 @@
+import heapq
+from collections import Counter
 
+class Solution:
+    def reorganizeString(self, s):
+        heap = [(-v, k) for k, v in Counter(s).items()]
+        heapq.heapify(heap)
+
+        prev = (0, "")
+        ans = ""
+
+        while heap:
+            freq, ch = heapq.heappop(heap)
+
+            ans += ch
+            freq += 1
+
+            if prev[0] < 0:
+                heapq.heappush(heap, prev)
+
+            prev = (freq, ch)
+
+        return ans if len(ans) == len(s) else ""
